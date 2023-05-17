@@ -1,0 +1,478 @@
+@font-face {
+    font-family: cocaColaFont;
+    src: url("../Assets/fonts/LOKICOLA.TTF");
+}
+
+body {
+    /*padding-top: 20px;*/
+    /*padding-bottom: 5px;*/
+    background-color: rgb(55, 243, 182);
+    min-height: 100vh;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Oswald', sans-serif;
+}
+
+/*=== Logo ===*/
+
+.logo {
+    margin: 32px 0 0 32px;
+}
+
+.logo h1 {
+    font-family: cocaColaFont, serif ;
+    font-size: 31px;
+    margin: -10px 0 -15px;
+    float: left;
+    padding-top: 0;
+    padding-left: 0;
+    padding-right: 2px;
+}
+
+.logo h2 {
+    font-family: cocaColaFont, serif;
+    font-size: 31px;
+    margin-top: -6px;
+    margin-bottom: -15px;
+    padding-top: 0;
+    padding-left: 0;
+    padding-right: 3px;
+    float: left;
+}
+
+.logo h3 {
+    font-size: 18px;
+    margin-top: 0;
+    margin-bottom: -5px;
+    padding-top: 0;
+    padding-left: 0;
+    float: left;
+}
+
+.logo p {
+    font-size: 8px;
+    margin-top: 22px;
+    margin-bottom: 0;
+    padding-top: 0;
+    padding-left: 3px;
+}
+
+/*=== Navbar ===*/
+.navbar_coca_cola {
+    background-color: #760003;
+    border-width: 0;
+    min-height: 60px;
+}
+
+.navbar_coca_cola .navbar-brand {
+    color: rgb(207, 18, 18);
+}
+
+.navbar_coca_cola .navbar-brand:hover {
+    color: green;
+}
+
+.navbar_coca_cola .navbar-collapse {
+    justify-content: flex-end;
+    margin-right: 32px;
+}
+
+.navbar_coca_cola .navbar-nav > li > a {
+    color: white;
+}
+
+.navbar_coca_cola .navbar-nav > li > a:hover,
+.navbar_coca_cola .navbar-nav > li > a:focus {
+    color: green;
+}
+
+.navbar_coca_cola .navbar-nav .nav-item {
+    margin-top: 0;
+}
+
+.navbar_coca_cola .navbar-nav .nav-item > .active,
+.navbar_coca_cola .navbar-nav > .active > a:hover,
+.navbar_coca_cola .navbar-nav > .active > a:focus {
+    color:  #760003;
+    background-color: #ea97ff;
+}
+
+.navbar_coca_cola .navbar-nav > li > a:hover,
+.navbar_coca_cola  .navbar-nav > li > a:focus {
+    color: blue;
+}
+
+.navbar_coca_cola .navbar-toggler {
+    border-color: white;
+    outline: none !important;
+    margin-right: 20px;
+}
+
+.navbar_coca_cola  .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1.0)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.dropdown-menu {
+    text-align: -webkit-left;
+    background-color: #b6e7f3;
+    margin-top: 12px;
+}
+
+.dropdown-menu .dropdown-item {
+    color: #eb0025;
+}
+
+.dropdown-menu .dropdown-item:hover {
+    color: #030303;
+    background-color: #e98074;
+}
+
+
+/*=== Main ===*/
+
+.main_contents {
+    padding: 48px 24px;
+}
+
+.row-splash {
+    margin-bottom: 48px;
+}
+
+#main_3d_image {
+    background-image: url(../Assets/img/main_3D.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 200px;
+}
+
+#main_text {
+    float: left;
+    margin: 5%;
+    width: 90%;
+    display: block;
+    background-color: rgba(255,255,255,0.8);
+    padding: 10px;
+    border-radius: 5px;
+}
+#main_text h2 {
+    color: rgb(218, 20, 60);
+    font-size: 20px;
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+#main_text h3 {
+    color: rgb(0, 138, 138);
+    font-size: 15px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+#main_text p {
+    font-size: 12px;
+    margin: 0;
+    line-height: 1.2;
+}
+
+.card {
+    border: 1px solid rgba(0,0,0,.125);
+    /* border-radius: .25rem;*/
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: rgba(255, 153, 51, 1.0);
+}
+
+/*=== Footer ===*/
+
+.footer {
+    color: #030303;
+    background-color: #311b1c; /* Set navbar footer background color same as header */
+    height: 68px;
+    padding: 0;
+}
+
+.navbar-text > a {
+    font-size: 8px;
+}
+
+.navbar-text > p {
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.copyright {
+    padding-top: 8px;
+}
+
+.social {
+    padding-top: 0;
+}
+
+.social i {
+    font-size: 20px;
+    color: white;
+}
+
+/*=== Media Queries ===*/
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) {
+
+    .dropdown-menu {
+        margin-left: -86px;
+    }
+
+    .navbar_coca_cola, .footer {
+        background-color: #02a83f;
+    }
+
+    .navbar-text > a {
+        font-size: 10px;
+    }
+
+    .navbar-text > p {
+        font-size: 18px;
+    }
+
+    .copyright {
+        padding-top: 20px;
+    }
+
+    .social {
+        padding-top: 7px;
+    }
+
+    #main_3d_image {
+        background-image: url("../Assets/img/main_3D_538.jpg");
+        height: 260px;
+    }
+
+    .card-text {
+        font-size: 11px;
+    }
+
+    .social i {
+        font-size: 16px;
+        color: white;
+    }
+
+    .footer {
+        height: 32px;
+    }
+
+    .copyright > p {
+        font-size: 12px;
+    }
+
+    body {
+        background-color: #dff1d5;
+    }
+
+    x3d {
+        height: 270px;
+    }
+}
+
+@media (min-width: 768px) {
+    #main_3d_image {
+        background-image: url("../Assets/img/main_3D_768.jpg");
+    }
+
+    .navbar_coca_cola, .footer {
+        background-color: #7f7f7f;
+    }
+
+    .card-text {
+        font-size: 12px;
+    }
+
+    .social i {
+        font-size: 20px;
+        color: white;
+    }
+
+    .footer {
+        height: 40px;
+    }
+
+    .copyright > p {
+        font-size: 14px;
+    }
+
+    body {
+        background-color: #820018;
+    }
+
+    x3d {
+        height: 360px;
+    }
+}
+
+@media (min-width: 992px) {
+    .navbar_coca_cola, .footer {
+        background-color: #820018;
+    }
+
+    .card-text {
+        font-size: 14px;
+    }
+
+    .social i {
+        font-size: 24px;
+        color: white;
+    }
+
+    .footer {
+        height: 48px;
+    }
+
+    .copyright > p {
+        font-size: 16px;
+    }
+
+    body {
+        background-color: #cfa549;
+    }
+
+    .x3d {
+        height: 450px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .navbar_coca_cola, .footer {
+        background-color: #043587;
+    }
+
+    .card-text {
+        font-size: 16px;
+    }
+
+    .social i {
+        font-size: 28px;
+        color: white;
+    }
+
+    .footer {
+        height: 56px;
+    }
+
+    body {
+         background-color: #9539b9;
+    }
+
+    x3d {
+        height: 540px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .navbar_coca_cola, .footer {
+        background-color: #000;
+    }
+
+    .navbar_coca_cola .navbar-brand:hover {
+        color: #ea0026;
+    }
+
+    .navbar_coca_cola .navbar-nav > li > a {
+        border-bottom: #000 2px solid;
+    }
+
+    .navbar_coca_cola .navbar-nav > li > a:hover,
+    .navbar_coca_cola .navbar-nav > li > a:focus {
+        color: #fff;
+        border-bottom: #ea0026 2px solid;
+    }
+
+    .navbar_coca_cola .navbar-nav .nav-item > .active {
+        background: #333;
+        font-weight: bold;
+        color: #fff;
+    }
+
+    .navbar_coca_cola .navbar-nav > .active > a:hover,
+    .navbar_coca_cola .navbar-nav > .active > a:focus {
+        color:  #760003;
+    }
+
+    .navbar_coca_cola .navbar-nav .dropdown-menu {
+        border-radius: 0;
+        background-color: rgba(25, 25, 25, 0.85);
+        border: none;
+        border-bottom: #ea0026 2px solid;
+        margin-top: 12px;
+        padding: 0;
+    }
+
+    .navbar_coca_cola .navbar-nav .dropdown-menu .dropdown-item {
+        color: #fff;
+    }
+
+    .navbar_coca_cola .navbar-nav .dropdown-menu .dropdown-item:hover,
+    .navbar_coca_cola .navbar-nav .dropdown-menu .dropdown-item:focus {
+        background-color: rgba(234, 0, 38, 0.4);
+    }
+
+    .main_contents #main_text h2 {
+        font-size: 28px;
+    }
+
+    .main_contents #main_text h3 {
+        font-size: 20px;
+    }
+    
+    .main_contents #main_text p {
+        font-size: 14px;
+    }
+
+    .main_contents .card {
+        border-radius: 0;
+        border: none;
+        background-color: #aed15b;
+    }
+
+    .main_contents .card .card-img-top {
+        border-radius: 0;
+    }
+
+    .card-text {
+        font-size: 14px;
+    }
+
+    .card .btn {
+        border-radius: 0;
+        color: #fff;
+        background-color: #333;
+        border: none;
+        font-size: 12px;
+    }
+
+    .card .btn:hover {
+        border-radius: 0;
+        color: #fff;
+        background-color: #a14050;
+        border: none;
+        font-size: 12px;
+    }
+
+    .social i {
+        font-size: 32px;
+        color: #fff;
+    }
+
+    .footer {
+        height: 74px;
+    }
+
+    body {
+        background-color: #00d873;
+    }
+
+    .x3d {
+        height: 600px;
+    }
+}

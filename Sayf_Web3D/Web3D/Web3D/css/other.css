@@ -1,0 +1,118 @@
+.swap-gallery .model-display-wrapper {
+    padding: 24px 16px;
+    margin: 0 16px;
+}
+
+.swap-gallery .model-selection-wrapper .nav-pills {
+    padding: 8px 0;
+    margin: 0 12px;
+}
+
+.swap-gallery .model-selection-wrapper .nav-link {
+    border-radius: 16px;
+    color: #000;
+}
+
+.swap-gallery .model-selection-wrapper .nav-label {
+    font-weight: bold;
+}
+
+
+.swap-gallery .model-selection-wrapper .nav-link:hover {
+    background-color: #ddd;
+}
+
+.swap-gallery .model-selection-wrapper .nav-link.active {
+    background-color: #333;
+    color: #fff;
+}
+
+.swap-gallery .x3d-wrapper {
+    margin: 24px 12px;
+    padding: 8px;
+}
+
+.swap-gallery .model-controls-wrapper {
+    margin: 0 4px;
+    padding: 16px 16px 64px 16px;
+    /*height: 100%;*/
+}
+
+.swap-gallery .model-controls-wrapper .model-controls-title {
+    margin: 8px 0 0 8px;
+}
+
+
+.swap-gallery .model-controls-buttons {
+    margin: 48px 0 0 12px;
+    display: flex;
+    row-gap: 48px;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.swap-gallery .description-text-wrapper {
+    margin: 0 12px;
+    padding: 32px;
+}
+
+.swap-gallery .model-description-subtitle h3 {
+    font-size: 24px;
+    color: #666;
+}
+
+.swap-gallery .model-description-text {
+    margin: 32px 0;
+}
+
+.swap-gallery .model-description-method p {
+    font-style: italic;
+}
+
+.swap-about .render-gallery-wrapper {
+    padding: 24px 16px;
+    margin: 0 16px;
+}
+
+.swap-about #image-gallery {
+    margin: 12px;
+}
+
+.swap-about .carousel-caption {
+    padding: 16px;
+    background-color: rgba(0, 0, 0, 0.6);
+    margin-bottom: 32px;
+}
+
+.swap-about .carousel-caption p {
+    padding-top: 24px;
+}
+
+
+@media (max-width: 1399px) {
+    .swap-gallery .btn-group .btn{
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 1199px) {
+    .swap-gallery .btn-group .btn{
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 991px) {
+    .swap-gallery .btn-group .btn{
+        font-size: 16px;
+    }
+
+    .swap-gallery .model-controls-wrapper {
+        margin: 32px 12px;
+    }
+}
+
+@media (max-width: 575px) {
+    .swap-gallery .btn-group .btn{
+        font-size: 12px;
+    }
+}
